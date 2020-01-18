@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.slider
+{
+        position: absolute;
+        top: 0 ; 
+        left : 0;
+        width  : 100% ;
+        height : 100vh ; 
+        background: linear-gradient(to right , #9a8272,#1e1915);
+        z-index: -1;     
+}
+#logo{
+    color : white;
+    font-family: 'consolas';
+    visibility: visible;
+}
+nav {
+    display: grid ; 
+    min-height: 10vh;
+    align-items: center;
+    
+}
+
+
+section{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items:  center ;
+ 
+}
+.BackImg2 {
+    height: 80% ;
+    width: 100%;
+    position: relative;
+    
+}
+
+
+.BackImg2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.headline{
+    position: absolute;
+    top : 70%;
+    left: 15%;
+    font-size: 100px;
+    transform: translate(-20%,-70%);
+    color: white;
+        
+}
+
+.BackImg2::after{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
