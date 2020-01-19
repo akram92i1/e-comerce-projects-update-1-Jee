@@ -71,13 +71,17 @@ public class AjouterProduit extends HttpServlet {
          Part filePart = request.getPart("image"); 
          
          addProduit p1 = new addProduit(libelle, img, prix, quantite);
-        
          
+         
+       
         try {
             List<String> addProduct = p1.addProduct(request);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(AjouterProduit.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(AjouterProduit.class.getName()).log(Level.SEVERE, null, ex);
         }
+  
  /*   try{
         
         connexion = DriverManager.getConnection( url, utilisateur, motDePasse );

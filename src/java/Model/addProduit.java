@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package Model;
-import java.io.File;
+
+import java.io.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Path;
@@ -74,7 +75,7 @@ public class addProduit {
         return quantite;
     }
        
-       public List<String> addProduct(HttpServletRequest req) throws ClassNotFoundException, IOException, ServletException
+       public List<String> addProduct(HttpServletRequest req) throws ClassNotFoundException, IOException, ServletException, InterruptedException
        {
            ArrayList<String> Produit = new ArrayList<String>();
            
@@ -104,6 +105,12 @@ public class addProduit {
                FileUtils.copyInputStreamToFile(fileContent, targetFile);
                String image = targetFile.toString();
                
+               int i = 0 ; 
+               while(targetFile.length() < filePart.getSize())
+               {
+                   i++;
+               }
+
                 //--------------------------------------------------------------------
                //---------- INSERT DATA INTO DATABASE ---------------
                statement.setString(1, libelle);
@@ -136,7 +143,9 @@ public class addProduit {
            return Produit;
        }
        
+   
        
+   
    public void clear(){
     setLibelle(null);
     setPhotoUrl(null);

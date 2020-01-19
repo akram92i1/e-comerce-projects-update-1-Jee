@@ -72,7 +72,7 @@ ResultSet resultSet = null;
                                 <tr>
                                 <td><%=resultSet.getString("id")%></td>
                                 <td><%=resultSet.getString("libelle")%></td>
-                                <td><img  src ="image/<%= resultSet.getString("photo")%>" style="width: 20%;height: 20%" alt="Fruit" /></td>
+                                <td><img  src ="image/<%= resultSet.getString("photo")%>" style="width: 20%;height: 20%" /></td>
                                 <td><%=resultSet.getDouble("prix")%></td>
                                 <td><%=resultSet.getInt("qts")%></td>
                                 <c:if test="${empty sessionScope.email}">
