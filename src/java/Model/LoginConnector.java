@@ -91,9 +91,7 @@ public class LoginConnector {
                 } catch (SQLException ignore ) {
                 }
             }
-            //--------------------------------
-            
-                  
+            //--------------------------------           
             if(connexion != null)
             {
               try{

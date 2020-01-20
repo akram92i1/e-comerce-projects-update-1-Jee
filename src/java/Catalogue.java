@@ -19,10 +19,10 @@ import javax.servlet.http.HttpServletResponse;
 public class Catalogue extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException  {
            
            RequestDispatcher rd = request.getRequestDispatcher("Catalogue.jsp");
-         rd.forward(request, response);
+           rd.forward(request, response);
        
     }
 

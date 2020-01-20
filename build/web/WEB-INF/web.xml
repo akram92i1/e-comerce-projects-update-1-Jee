@@ -20,6 +20,10 @@
         <servlet-name>Catalogue</servlet-name>
         <servlet-class>Catalogue</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AjaxServletForPanier</servlet-name>
+        <servlet-class>AjaxServletForPanier</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Connexion</servlet-name>
         <url-pattern>/Connexion</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>Catalogue</servlet-name>
         <url-pattern>/Catalogue</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AjaxServletForPanier</servlet-name>
+        <url-pattern>/AjaxServletForPanier</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

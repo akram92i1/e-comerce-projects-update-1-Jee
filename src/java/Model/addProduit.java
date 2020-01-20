@@ -31,6 +31,7 @@ import org.apache.commons.io.FileUtils;
                  maxFileSize=1024*1024*50,      	// 50 MB
                  maxRequestSize=1024*1024*100) 
 public class addProduit {
+    
        private String libelle ; 
        private String photoUrl ; 
        private double prix ; 
